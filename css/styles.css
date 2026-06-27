@@ -333,6 +333,8 @@ ul { list-style: none; }
 @media (max-width: 768px) {
   .nav__links, .nav__cta { display: none; }
   .nav__hamburger { display: flex; }
+  .nav__logo-img { height: 28px; max-width: 90px; }
+  .nav__logo-sub { font-size: 0.45rem; }
 }
 
 /* ============================================================
