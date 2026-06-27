@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://igrp.com.mx/sitemap.xml
