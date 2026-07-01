@@ -57,7 +57,7 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
 /* ─── CONTADOR REGRESIVO ─── */
 // Fecha de lanzamiento: 21 de Octubre 2026, medianoche hora CDMX (UTC-6)
-const LAUNCH_DATE = new Date('2026-10-21T00:00:00-06:00');
+const LAUNCH_DATE = new Date('2026-08-01T00:00:00-06:00');
 
 function pad(n) { return String(n).padStart(2, '0'); }
 
