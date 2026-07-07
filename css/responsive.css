@@ -1,1 +1,91 @@
+/* ============================================================
+   IGRP Performance & Industrial — responsive.css
+   Breakpoints: 1024px (tablet) · 768px (móvil grande) · 640px (móvil)
+   ============================================================ */
 
+/* ============================================================
+   RESPONSIVE — TABLET
+   ============================================================ */
+@media (max-width: 1024px) {
+  .philosophy__inner { grid-template-columns: 1fr; gap: 3rem; }
+  .history__inner    { grid-template-columns: 1fr; gap: 3rem; }
+  .history__left     { position: static; }
+  .footer__main      { grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .gallery__grid     { grid-template-columns: repeat(3, 1fr); }
+  .why__grid         { grid-template-columns: repeat(2, 1fr); }
+  .brand-timeline    { grid-template-columns: repeat(2, 1fr); gap: 3rem 0; }
+  .brand-timeline__line { display: none; }
+  .nav__dropdown     { display: none; }
+}
+
+/* ============================================================
+   RESPONSIVE — MÓVIL GRANDE (hamburguesa)
+   ============================================================ */
+@media (max-width: 768px) {
+  .nav__links, .nav__cta { display: none; }
+  .nav__hamburger { display: flex; }
+  /* Logo más pequeño en móvil */
+  .nav__logo-img  { height: 26px; max-width: 80px; }
+  .nav__logo-sub  { font-size: 0.42rem; }
+  /* Padding reducido en nav para que hamburguesa no quede lejos */
+  .nav { padding-inline: 1rem; }
+  .container { padding-inline: 1.25rem; }
+}
+
+/* ============================================================
+   RESPONSIVE — MÓVIL
+   ============================================================ */
+@media (max-width: 640px) {
+  :root {
+    --space-2xl: 5rem;
+    --space-xl:  3rem;
+  }
+
+  /* Filosofía — texto más pequeño */
+  .philosophy__title        { font-size: 2.2rem !important; }
+  .philosophy__right .philosophy__text { font-size: 1rem; }
+
+  /* Producto — galería más grande */
+  .founder__product         { grid-template-columns: 1fr; }
+  .founder__visual          { aspect-ratio: 3/4; min-height: 320px; }
+  .product-gallery__img     { aspect-ratio: 3/4; }
+
+  /* Por qué IGRP — una columna */
+  .why__grid                { grid-template-columns: 1fr; }
+  .why-card                 { padding: 1.5rem; }
+  .why-card__title          { font-size: 1.1rem; }
+
+  /* Valores */
+  .values__inner            { grid-template-columns: 1fr; }
+
+  /* Galería Instagram */
+  .gallery__grid            { grid-template-columns: repeat(2, 1fr); }
+
+  /* Footer */
+  .footer__main             { grid-template-columns: 1fr; gap: 2.5rem; }
+  .footer__bottom           { flex-direction: column; gap: 1.5rem; text-align: center; }
+
+  /* Newsletter */
+  .newsletter__form         { flex-direction: column; }
+  .newsletter__input        { border-right: 1px solid var(--clr-border); border-bottom: none; }
+
+  /* Historia */
+  .history__data            { grid-template-columns: 1fr 1fr; }
+
+  /* Hero */
+  .hero__metrics            { gap: 1.5rem; }
+  .hero__metric-val         { font-size: 1.2rem; }
+
+  /* Roadmap y timeline */
+  .roadmap__timeline        { flex-direction: column; align-items: center; gap: 1.5rem; }
+  .roadmap__connector       { width: 1px; height: 2rem; margin: 0; transform: rotate(90deg); }
+  .brand-timeline           { grid-template-columns: 1fr; gap: 2.5rem; }
+
+  /* Dónde comprar */
+  .where__grid              { grid-template-columns: 1fr; }
+
+  /* Founder */
+  .founder__float-tag       { display: none; }
+  .founder__availability    { flex-wrap: wrap; }
+  .founder__availability-link { margin-left: 0; width: 100%; }
+}
