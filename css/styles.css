@@ -1449,6 +1449,7 @@ ul { list-style: none; }
   overflow-x: auto;
   padding-bottom: 1rem;
   scrollbar-width: none;
+   justify-content: center;
 }
 .roadmap__timeline::-webkit-scrollbar { display: none; }
 
